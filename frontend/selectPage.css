@@ -1,89 +1,153 @@
 * {
-    box-sizing: border-box;
-  }
-  html{
-    width: 100%;
-    height: 100%;
-  }
-  body {
-    margin: 0;
-    background-color: #c5dedd;
-    width: 100%;
-    height: 100%;
-  }
-  /* Dashed border */
-  hr.dashed {
-    border-top: 3px dashed #bbb;
-  }
-  
-  /* Dotted border */
-  hr.dotted {
-    border-top: 3px dotted #bbb;
-  }
-  
-  /* Solid border */
-  hr.solid {
-    border-top: 3px solid #bbb;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    right: 0px;
-  }
-  
-  /* Rounded border */
-  hr.rounded {
-    border-top: 8px solid #bbb;
-    border-radius: 5px;
-  }
-  .navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #001d3d;
-  }
-  
-  .navbarlist {
-    float: left;
-  }
-  
-  .navbarlist a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .navbarlist a:hover {
-    background-color: #111;
-  }
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  margin: 0;
+  background-color: #c5dedd;
+  width: 100%;
+  height: 100%;
+}
+/* Dashed border */
+hr.dashed {
+  border-top: 3px dashed #bbb;
+}
 
-  .midcontent{
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 70%;
-      height: 80%;
-      margin: auto;
-      padding: 0;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      background-color:#ffffff;
-  }
+/* Dotted border */
+hr.dotted {
+  border-top: 3px dotted #bbb;
+}
 
-  .pageheader{
-      width: 100%;
-      background-color:#FFF1E6;
-      padding: 5px;
-      margin: 0;
-      text-align: center;
-  }
-  .sectionheaderrow{
-      /* display: flex; */
-      /* flex-direction: row; */
-      justify-content: space-between;
-  }
+/* Solid border */
+hr.solid {
+  display: flex;
+  border-top: 3px solid #bbb;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 100px;
+  
+}
+
+/* Rounded border */
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+}
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #001d3d;
+}
+
+.navbarlist {
+  float: left;
+}
+
+.navbarlist a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbarlist a:hover {
+  background-color: #111;
+}
+
+.midcontent {
+  position: absolute;
+  /* display: flex; */
+  /* flex-direction: column; */
+  align-items: center;
+  width: 70%;
+  height: 80%;
+  margin: auto;
+  padding: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  /* background-color: #ffffff; */
+}
+
+.pageheader {
+  width: 100%;
+  background-color: #fff1e6;
+  padding: 5px;
+  margin: 0;
+  text-align: center;
+}
+.sectionheaderrow {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+}
+.text-divider {
+  display: flex;
+  align-items: center;
+  --text-divider-gap: 1rem; 
+  margin: 50px 0px;
+}
+
+.text-divider::before,
+.text-divider::after {
+  content: '';
+  height: 3px;
+  background-color: white;
+  flex-grow: 1;
+}
+
+.text-divider::before {
+  margin-right: var(--text-divider-gap);
+}
+
+.text-divider::after {
+  margin-left: var(--text-divider-gap);
+}
+
+.listbutton{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  overflow:visible;
+}
+.roombtn{
+  width: 200px;
+  background-color: white;
+  min-width: 100px;
+  min-height: 100px;
+  height: 200px;
+  border: none;
+  border-radius: 15px;
+  font-size : 24px;
+}
+
+.roombtn:hover{
+  border: 5px solid #00CD83;
+  color: #00CD83;
+}
+
+.myButton{
+  display: flex;
+  justify-content: space-between;
+}
+.myButton input {
+  background:url(./images/dog.jpg) no-repeat center top;
+  background-size: contain;
+  background-color: white;
+  cursor:pointer;
+  width: 200px;
+  height: 200px;
+  border: none;
+  border-radius: 15px;
+}
+.myButton input:hover{
+  border: 5px solid #00CD83;
+}
