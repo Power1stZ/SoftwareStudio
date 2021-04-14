@@ -119,11 +119,11 @@ hr.rounded {
   overflow:visible;
 }
 .roombtn{
-  width: 200px;
   background-color: white;
-  min-width: 100px;
-  min-height: 100px;
-  height: 200px;
+  min-width: 10vw;
+  min-height: 10vw;
+  height: 10vw;
+  width: 10vw;
   border: none;
   border-radius: 15px;
   font-size : 24px;
@@ -136,15 +136,17 @@ hr.rounded {
 
 .myButton{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
 }
 .myButton input {
   background:url(./images/dog.jpg) no-repeat center top;
   background-size: contain;
   background-color: white;
   cursor:pointer;
-  width: 200px;
-  height: 200px;
+  width: 10vw;
+  height: 10vw;
+  min-width: 10vw;
+  min-height: 10vw;
   border: none;
   border-radius: 15px;
 }
